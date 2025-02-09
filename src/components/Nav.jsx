@@ -1,6 +1,11 @@
 import React from "react";
-import { Link } from "react-router"
-import { FaLinkedin, FaGithubSquare, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router";
+import {
+  FaLinkedin,
+  FaGithubSquare,
+  FaEnvelope,
+  FaFilePdf,
+} from "react-icons/fa";
 
 function Nav() {
   return (
@@ -12,9 +17,24 @@ function Nav() {
         width="7%"
       /> */}
       <div className="linkTo">
-      <Link className="clickNav" to="https://www.linkedin.com/in/katie-nink-smith-560805325/" target="_blank"><FaLinkedin /></Link>
-      <Link className="clickNav" to="https://github.com/KatieNinkSmith" target="_blank"><FaGithubSquare /></Link>
-      <Link className="clickNav" to="/Contact"><FaEnvelope /></Link>
+        <Link
+          className="clickNav"
+          to="https://www.linkedin.com/in/katie-nink-smith-560805325/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </Link>
+        <Link
+          className="clickNav"
+          to="https://github.com/KatieNinkSmith"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </Link>
+        <Link className="clickNav" to="/Contact">
+          <FaEnvelope />
+        </Link>
+        <FaFilePdf className="clickNav" />
       </div>
     </div>
   );

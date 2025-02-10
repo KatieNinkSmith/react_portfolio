@@ -28,8 +28,10 @@ function Projects() {
           <HiOutlineArrowSmLeft />
         </button>
         <div>
-          <h3>{projects.name}</h3>
+          <h2>{projects.name}</h2>
           <p>{projects.description}</p>
+          <img src={projects.image} width="150" />
+          <p>Tools used: {projects.toolsUsed}</p>
         </div>
         <button onClick={nextProject}>
           <HiOutlineArrowSmRight />

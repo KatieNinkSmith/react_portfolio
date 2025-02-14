@@ -106,7 +106,32 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 25%;
-  /* background-color: rgb(240, 235, 216); */
+}
+.form {
+  width: 72%;
+  margin: 15px;
+  background-color: rgb(240, 235, 216, 0.5);
+  border-radius: 5px;
+}
+.field {
+  color: rgb(240, 235, 216);
+  background-color: rgb(67, 21, 100);
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  width: 50%;
+}
+.subBut {
+  background-color: rgb(67, 21, 100);
+  border-radius: 5px;
+  color: rgb(118, 123, 145);
+  border: none;
+  width: 51%;
+  margin-bottom: 15px;
+}
+.subBut:hover {
+  background-color: rgb(244, 113, 42);
+  color: rgb(18, 148, 144);
 }
 .footer {
   display: flex;
@@ -117,7 +142,7 @@ body {
   /* background-color: rgb(240, 235, 216); */
 }
 .footer p {
-  width: 70%;
+  width: 71%;
   background-color: rgb(240, 235, 216, 0.5);
   padding: 5px;
   border-radius: 5px;

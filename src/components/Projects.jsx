@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 
 function Projects() {
@@ -31,6 +31,18 @@ function Projects() {
           <h2>{projects.name}</h2>
           <p>{projects.description}</p>
           <img src={projects.image} width="150" />
+          <h4>
+            Live link:
+            <Link to={projects.deployedURLFront} target="_blank">
+              Toddler words frontend
+            </Link>
+          </h4>
+          <h4>
+            Live link:
+            <Link to={projects.deployedURLBack} target="_blank">
+              Toddler words backend
+            </Link>
+          </h4>
           <p>Tools used: {projects.toolsUsed}</p>
         </div>
         <button onClick={nextProject}>

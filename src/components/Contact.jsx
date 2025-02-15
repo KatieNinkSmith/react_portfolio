@@ -1,8 +1,7 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 function Contact() {
   const [result, setResult] = useState("");
-  const formRef = useRef(null);
 
   const onSubmit = async (event) => {
     event.preventDefault();

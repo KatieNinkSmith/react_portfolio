@@ -42,7 +42,11 @@ function Nav() {
         <Link className="clickNav">
           <FaEnvelope onClick={scrollToForm} />
         </Link>
-        <FaFilePdf className="clickNav" />
+        <button className="downloadBtn">
+          <a herf="katieResume.docx">
+            <FaFilePdf className="clickNav" />
+          </a>
+        </button>
       </div>
     </div>
   );

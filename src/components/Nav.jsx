@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react";
 import { Link } from "react-router";
 import {
   FaLinkedin,
@@ -31,14 +30,14 @@ function Nav() {
         >
           <FaGithubSquare />
         </Link>
-        <Link className="clickNav">
-          <FaEnvelope onClick={scrollToForm} />
+        {/* <Link className="clickNav">
+          <FaEnvelope />
         </Link>
         <button className="downloadBtn">
           <a herf="katieResume.docx">
             <FaFilePdf className="clickNav" />
           </a>
-        </button>
+        </button> */}
       </div>
     </div>
   );

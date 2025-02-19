@@ -27,7 +27,7 @@ function Contact() {
   };
   return (
     <div className="contact">
-      <form onSubmit={onSubmit} ref={formRef} className="form">
+      <form onSubmit={onSubmit} className="form">
         <h2>Contact Form</h2>
         <div className="inputBox">
           <label>Full Name</label>

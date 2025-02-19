@@ -8,14 +8,6 @@ import {
 } from "react-icons/fa";
 
 function Nav() {
-  const formRef = useRef(null);
-
-  function scrollToForm() {
-    formRef.current?.scrollIntoView({ behavior: "smooth" });
-  }
-  useEffect(() => {
-    setTimeout(scrollToForm, 1000); // Scroll after 1 second
-  }, []);
   return (
     <div className="nav">
       {/* <img

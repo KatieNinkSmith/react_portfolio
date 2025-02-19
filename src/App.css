@@ -55,11 +55,13 @@ body {
   min-height: 17%;
   width: 80%;
   margin: 0px auto;
+  padding-top: 30px;
   /* background-color: rgb(244, 113, 42); */
   color: rgb(67, 21, 100);
 }
 
 .header h1 {
+  margin-left: 15px;
   font-size: 3.5rem;
   text-shadow: 1px 1px rgb(240, 235, 216, 0.5);
 }

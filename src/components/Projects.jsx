@@ -14,7 +14,7 @@ function Projects() {
       deployedURLFront: "https://toddlerwords.netlify.app/",
       deployedURLBack: "https://toddler-words-backend.onrender.com/",
       githubFront: "https://github.com/KatieNinkSmith/Toddler_Words_Frontend",
-      githunBack: "https://github.com/KatieNinkSmith/Toddler_Words_Backend",
+      githubBack: "https://github.com/KatieNinkSmith/Toddler_Words_Backend",
       toolsUsed:
         "Frontend: React.js Backend: Node.js, Express.js Database: MongoDB, Firebase Audio API: Dictionary API Authentication: JWT, bcrypt",
     },
@@ -25,7 +25,7 @@ function Projects() {
       deployedURLFront: "",
       deployedURLBack: "",
       githubFront: "",
-      githunBack: "",
+      githubBack: "",
       toolsUsed: "",
     },
   ];
@@ -51,24 +51,34 @@ function Projects() {
         <button onClick={prevProject}>
           <HiOutlineArrowSmLeft />
         </button>
+
         {currentProject.name ? (
           <div>
+            <h1>Projects</h1>
             <h2>{currentProject.name}</h2>
             <p>{currentProject.description}</p>
             <img src={currentProject.image} width="150" />
-            {currentProject.deployedURLFront ? (
+            {currentProject.deployedURLFront || currentProject.githubFront ? (
               <h4>
-                Live link:
+                Live link:{" "}
                 <Link to={currentProject.deployedURLFront} target="_blank">
                   {currentProject.name} frontend
+                </Link>{" "}
+                GitHub:{" "}
+                <Link to={currentProject.githubFront} target="_blank">
+                  {currentProject.name} repo
                 </Link>
               </h4>
             ) : null}
-            {currentProject.deployedURLBack ? (
+            {currentProject.deployedURLBack || currentProject.githubBack ? (
               <h4>
-                Live link:
+                Live link:{" "}
                 <Link to={currentProject.deployedURLBack} target="_blank">
                   {currentProject.name} backend
+                </Link>{" "}
+                GitHub:{" "}
+                <Link to={currentProject.githubBack} target="_blank">
+                  {currentProject.name} repo
                 </Link>
               </h4>
             ) : null}
@@ -76,7 +86,9 @@ function Projects() {
               <p>Tools used: {currentProject.toolsUsed}</p>
             ) : null}
           </div>
-        ) : null}
+        ) : (
+          <h1>Projects building...</h1>
+        )}
         <button onClick={nextProject}>
           <HiOutlineArrowSmRight />
         </button>

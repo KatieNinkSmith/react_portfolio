@@ -16,7 +16,7 @@ function Projects() {
       githubFront: "https://github.com/KatieNinkSmith/Toddler_Words_Frontend",
       githubBack: "https://github.com/KatieNinkSmith/Toddler_Words_Backend",
       toolsUsed:
-        "Frontend: React.js Backend: Node.js, Express.js Database: MongoDB, Firebase Audio API: Dictionary API Authentication: JWT, bcrypt",
+        "Frontend: React.js | Backend: Node.js, Express.js | Database: MongoDB, Firebase | Audio API: Dictionary API | Authentication: JWT, bcrypt",
     },
     {
       name: "",

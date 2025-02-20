@@ -21,14 +21,14 @@ function Nav() {
           to="https://www.linkedin.com/in/katie-nink-smith-560805325/"
           target="_blank"
         >
-          <FaLinkedin />
+          <FaLinkedin size="25px" />
         </Link>
         <Link
           className="clickNav"
           to="https://github.com/KatieNinkSmith"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithubSquare size="25px" />
         </Link>
         {/* <Link className="clickNav">
           <FaEnvelope />

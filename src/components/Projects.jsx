@@ -51,36 +51,32 @@ function Projects() {
         <button onClick={prevProject}>
           <HiOutlineArrowSmLeft />
         </button>
-        <div>
-          <h2>{currentProject.name}</h2>
-          <p>{currentProject.description}</p>
-          <img src={currentProject.image} width="150" />
-          {currentProject.deployedURLFront ? (
-            <h4>
-              Live link:
-              <Link to={currentProject.deployedURLFront} target="_blank">
-                {currentProject.name} frontend
-              </Link>
-            </h4>
-          ) : (
-            " "
-          )}
-          {currentProject.deployedURLBack ? (
-            <h4>
-              Live link:
-              <Link to={currentProject.deployedURLBack} target="_blank">
-                {currentProject.name} backend
-              </Link>
-            </h4>
-          ) : (
-            " "
-          )}
-          {currentProject.toolsUsed ? (
-            <p>Tools used: {currentProject.toolsUsed}</p>
-          ) : (
-            " "
-          )}
-        </div>
+        {currentProject.name ? (
+          <div>
+            <h2>{currentProject.name}</h2>
+            <p>{currentProject.description}</p>
+            <img src={currentProject.image} width="150" />
+            {currentProject.deployedURLFront ? (
+              <h4>
+                Live link:
+                <Link to={currentProject.deployedURLFront} target="_blank">
+                  {currentProject.name} frontend
+                </Link>
+              </h4>
+            ) : null}
+            {currentProject.deployedURLBack ? (
+              <h4>
+                Live link:
+                <Link to={currentProject.deployedURLBack} target="_blank">
+                  {currentProject.name} backend
+                </Link>
+              </h4>
+            ) : null}
+            {currentProject.toolsUsed ? (
+              <p>Tools used: {currentProject.toolsUsed}</p>
+            ) : null}
+          </div>
+        ) : null}
         <button onClick={nextProject}>
           <HiOutlineArrowSmRight />
         </button>

@@ -8,6 +8,7 @@
   color: rgb(18, 148, 144);
 }
 body {
+  /* add max-width so it wont stretch and look funny */
   width: 100%;
   min-height: 100vh;
   margin: 0;
